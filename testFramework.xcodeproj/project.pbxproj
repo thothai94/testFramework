@@ -13,12 +13,12 @@
 		1133909D2A08CA7900D3A386 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1133909C2A08CA7900D3A386 /* ContentView.swift */; };
 		1133909F2A08CA7E00D3A386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1133909E2A08CA7E00D3A386 /* Assets.xcassets */; };
 		113390A22A08CA7E00D3A386 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113390A12A08CA7E00D3A386 /* Preview Assets.xcassets */; };
-		113390B42A08DE0F00D3A386 /* testFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113390882A08C87C00D3A386 /* testFramework.framework */; };
-		113390B52A08DE0F00D3A386 /* testFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 113390882A08C87C00D3A386 /* testFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		113390BB2A08E74900D3A386 /* testFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113390882A08C87C00D3A386 /* testFramework.framework */; };
+		113390BC2A08E74900D3A386 /* testFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 113390882A08C87C00D3A386 /* testFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		113390B62A08DE0F00D3A386 /* PBXContainerItemProxy */ = {
+		113390BD2A08E74900D3A386 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1133907F2A08C87C00D3A386 /* Project object */;
 			proxyType = 1;
@@ -28,13 +28,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		113390B32A08D6F600D3A386 /* Embed Frameworks */ = {
+		113390BF2A08E74900D3A386 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				113390B52A08DE0F00D3A386 /* testFramework.framework in Embed Frameworks */,
+				113390BC2A08E74900D3A386 /* testFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				113390B42A08DE0F00D3A386 /* testFramework.framework in Frameworks */,
+				113390BB2A08E74900D3A386 /* testFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +153,8 @@
 			dependencies = (
 			);
 			name = testFramework;
+			packageProductDependencies = (
+			);
 			productName = testFramework;
 			productReference = 113390882A08C87C00D3A386 /* testFramework.framework */;
 			productType = "com.apple.product-type.framework";
@@ -164,12 +166,12 @@
 				113390942A08CA7900D3A386 /* Sources */,
 				113390952A08CA7900D3A386 /* Frameworks */,
 				113390962A08CA7900D3A386 /* Resources */,
-				113390B32A08D6F600D3A386 /* Embed Frameworks */,
+				113390BF2A08E74900D3A386 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				113390B72A08DE0F00D3A386 /* PBXTargetDependency */,
+				113390BE2A08E74900D3A386 /* PBXTargetDependency */,
 			);
 			name = TestFrameworkExamples;
 			productName = TestFrameworkExamples;
@@ -204,6 +206,8 @@
 				Base,
 			);
 			mainGroup = 1133907E2A08C87C00D3A386;
+			packageReferences = (
+			);
 			productRefGroup = 113390892A08C87C00D3A386 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -254,10 +258,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		113390B72A08DE0F00D3A386 /* PBXTargetDependency */ = {
+		113390BE2A08E74900D3A386 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 113390872A08C87C00D3A386 /* testFramework */;
-			targetProxy = 113390B62A08DE0F00D3A386 /* PBXContainerItemProxy */;
+			targetProxy = 113390BD2A08E74900D3A386 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -396,7 +400,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -427,7 +431,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
